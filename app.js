@@ -4,13 +4,13 @@ let amigos = [];
 //Adicionando a lista de amigos a um array
 function adicionarAmigo() {
     let limparNomeSorteado = document.getElementById("resultado");
-    limparNomeSorteado.innerHTML = " ";
+    limparNomeSorteado.innerHTML = "";
 
     //Inserir nome e quarda no array amigos
     let entradaListaAmigos = document.querySelector("input").value;
 
     //Verifica se o Campo esta vazio
-    if (entradaListaAmigos == " ") {
+    if (entradaListaAmigos == "") {
         alert("Por favor, insira um nome.")
     } else {
         amigos.push(entradaListaAmigos);
@@ -30,7 +30,7 @@ function adicionarAmigo() {
 
 function limparCampoDeTexto() {
     let limpaTexto = document.querySelector("input");
-    limpaTexto.value = (" ")
+    limpaTexto.value = "";
 
     
 }
@@ -41,7 +41,7 @@ function percorrerArrayAmigos(amigos) {
 
     let listaNomesAmigos = document.getElementById("listaAmigos"); // cria uma variavel pata pegar o elemento da listano html
 
-    listaNomesAmigos.innerHTML = " "; //Zera o valor para ter certeza que não tem sujeira 
+    listaNomesAmigos.innerHTML = ""; //Zera o valor para ter certeza que não tem sujeira 
 
     //Faz um loopr para pegar todos elementos do array amigos e tem o amigos
     amigos.forEach(amigo => {
@@ -68,7 +68,7 @@ function sortearAmigo() {
     let amigoSecreto = amigos[indiceAmigoSorteado];
 
     let limparNomesLista = document.getElementById("listaAmigos");
-    limparNomesLista.innerHTML = " ";
+    limparNomesLista.innerHTML = "";
     amigos.length = 0;
 
 
